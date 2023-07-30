@@ -1,0 +1,36 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(236, 72, 72, 1) 16%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.box {
+  max-width: 350px;
+  height: 50px;
+  margin: 10px auto;
+  background: lightcyan;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.links {
+  color: white;
+}
+
+.input {
+  width: 150px;
+}
+
+h2 {
+  color: white;
+}
+
+.taskBtn {
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: x-large;
+}
