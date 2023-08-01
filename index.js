@@ -34,15 +34,16 @@ app.get("/work", (req, res) => {
 
 app.post("/", (req, res) => {
   const newTask = req.body.newtask;
-  console.log(req.body);
 
-  if (req.body.list === "Work") {
-    workList.push(newTask);
-    res.redirect("/work");
-  } else {
-    taskList.push(newTask);
-    res.redirect("/");
-  }
+  taskList.push(newTask);
+  res.redirect("/");
+});
+
+app.post("/work", (req, res) => {
+  const newTask = req.body.newtask;
+
+  workList.push(newTask);
+  res.redirect("/work");
 });
 
 app.listen(port, () => {
